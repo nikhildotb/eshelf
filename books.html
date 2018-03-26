@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Homepage | E-shelf</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+	<link href="css/homepage.css" rel="stylesheet" type="text/css">
+	<link href="css/cart.css" rel="stylesheet" type="text/css">
+	<link href="css/books.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<div class="heading font">
+	<h1 class="txt">E-Shelf</h1>
+</div>
+<div id="navbar" class="bar font">
+	<ul>
+	  <li><a href="homepage.html">Home</a></li>
+	  <li><a class="active" href="books.html">Books</a></li>
+	  <li><a href="#">Contact</a></li>
+	  <li class="right"><a href="loginpage.html"><span class="fa fa-user-circle-o"> </span>&ensp;Login/Signup</a></li>
+	  <li class="right cart"><a href="cart.html"><span class="fa fa-shopping-cart"> </span>&ensp;Cart</a></li>
+	</ul>
+</div>
+
+<div class="col-12 body content">
+	<div class="col-md-3 side_menu" style="position: fixed;">
+		<div class="year">
+			<h2 style="text-align: center;">Year Of Study</h2>
+			<ul>
+				<li><a href="#" onclick="year1()">1st year</a></li>
+				<li><a href="#" onclick="year2()">2nd year</a></li>
+				<li><a href="#" onclick="year3()">3rd year</a></li>
+				<li><a href="#" onclick="year4()">4th year</a></li>
+			</ul>
+		</div>
+		<hr style="border-top: 1px solid #337ab7; width: 80%;">
+		<div class="books">
+			<h2 style="text-align: center;">Most Searched books</h2>
+			<ul>
+				<li><a href="#">C by Balaguru Swamy</a></li>
+				<li><a href="#">Java</a></li>
+				<li><a href="#">OS</a></li>
+				<li><a href="#">CD</a></li>
+			</ul>
+		</div>
+	</div>
+<!-- 1st Year-->
+	<div class="col-md-8 content" style="position: relative; left: 380px;" id="year1">
+		<div class="cart_content col-md-12">
+		<div class="items col-md-12">
+			<div class="item col-md-12">
+				<div class="col-md-3 book_img">
+					<img src="img/cp.jpg" width=100px height= auto/>
+				</div>
+				<div class="col-md-9 book_desc">
+					<div class="book_title">
+						<h4 class="item_name">C Programming By Balaguru Swamy Part - 1</h4>
+					</div>
+					<div class="price">
+						Price: &#8377;<span id="price1">450</span>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="item col-md-12" style="margin-top: 50px;">
+				<div class="col-md-3 book_img">
+					<img src="img/java.jpg" width=100px height= auto/>
+				</div>
+				<div class="col-md-9 book_desc">
+					<div class="book_title">
+						<h4 class="item_name">Java - The complete Reference Part - 1</h4>
+					</div>
+					<div class="price">
+						Price: &#8377;<span id="price2">640</span>
+					</div>
+				</div>
+			</div>
+	
+
+			<div class="item col-md-12" style="margin-top: 50px; margin-bottom: 50px;">
+				<div class="col-md-3 book_img">
+					<img src="img/os.jpg" width=100px height= auto/>
+				</div>
+				<div class="col-md-9 book_desc">
+					<div class="book_title">
+						<h4 class="item_name">Operating Systems Part - 1</h4>
+					</div>
+					<div class="price">
+						Price: &#8377;<span id="price3">570</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+<!-- 2nd Year-->
+	<div class="col-md-8 content" style="position: relative; left: 380px;" id="year2">
+		<div class="cart_content col-md-12">
+		<div class="items col-md-12">
+			<div class="item col-md-12">
+				<div class="col-md-3 book_img">
+					<img src="img/cp.jpg" width=100px height= auto/>
+				</div>
+				<div class="col-md-9 book_desc">
+					<div class="book_title">
+						<h4 class="item_name">C Programming By Balaguru Swamy Part - 2</h4>
+					</div>
+					<div class="price">
+						Price: &#8377;<span id="price1">450</span>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="item col-md-12" style="margin-top: 50px;">
+				<div class="col-md-3 book_img">
+					<img src="img/java.jpg" width=100px height= auto/>
+				</div>
+				<div class="col-md-9 book_desc">
+					<div class="book_title">
+						<h4 class="item_name">Java - The complete Reference Part - 2</h4>
+					</div>
+					<div class="price">
+						Price: &#8377;<span id="price2">640</span>
+					</div>
+				</div>
+			</div>
+	
+
+			<div class="item col-md-12" style="margin-top: 50px; margin-bottom: 50px;">
+				<div class="col-md-3 book_img">
+					<img src="img/os.jpg" width=100px height= auto/>
+				</div>
+				<div class="col-md-9 book_desc">
+					<div class="book_title">
+						<h4 class="item_name">Operating Systems Part - 2</h4>
+					</div>
+					<div class="price">
+						Price: &#8377;<span id="price3">570</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+<!-- 3rd Year-->
+	<div class="col-md-8 content" style="position: relative; left: 380px;" id="year3">
+		<div class="cart_content col-md-12">
+		<div class="items col-md-12">
+			<div class="item col-md-12">
+				<div class="col-md-3 book_img">
+					<img src="img/cp.jpg" width=100px height= auto/>
+				</div>
+				<div class="col-md-9 book_desc">
+					<div class="book_title">
+						<h4 class="item_name">C Programming By Balaguru Swamy Part - 3</h4>
+					</div>
+					<div class="price">
+						Price: &#8377;<span id="price1">450</span>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="item col-md-12" style="margin-top: 50px;">
+				<div class="col-md-3 book_img">
+					<img src="img/java.jpg" width=100px height= auto/>
+				</div>
+				<div class="col-md-9 book_desc">
+					<div class="book_title">
+						<h4 class="item_name">Java - The complete Reference Part - 3</h4>
+					</div>
+					<div class="price">
+						Price: &#8377;<span id="price2">640</span>
+					</div>
+				</div>
+			</div>
+	
+
+			<div class="item col-md-12" style="margin-top: 50px; margin-bottom: 50px;">
+				<div class="col-md-3 book_img">
+					<img src="img/os.jpg" width=100px height= auto/>
+				</div>
+				<div class="col-md-9 book_desc">
+					<div class="book_title">
+						<h4 class="item_name">Operating Systems Part - 3</h4>
+					</div>
+					<div class="price">
+						Price: &#8377;<span id="price3">570</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+
+<!-- 4th Year-->
+	<div class="col-md-8 content" style="position: relative; left: 380px;" id="year4">
+		<div class="cart_content col-md-12">
+		<div class="items col-md-12">
+			<div class="item col-md-12">
+				<div class="col-md-3 book_img">
+					<img src="img/cp.jpg" width=100px height= auto/>
+				</div>
+				<div class="col-md-9 book_desc">
+					<div class="book_title">
+						<h4 class="item_name">C Programming By Balaguru Swamy Part - 4</h4>
+					</div>
+					<div class="price">
+						Price: &#8377;<span id="price1">450</span>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="item col-md-12" style="margin-top: 50px;">
+				<div class="col-md-3 book_img">
+					<img src="img/java.jpg" width=100px height= auto/>
+				</div>
+				<div class="col-md-9 book_desc">
+					<div class="book_title">
+						<h4 class="item_name">Java - The complete Reference Part - 4</h4>
+					</div>
+					<div class="price">
+						Price: &#8377;<span id="price2">640</span>
+					</div>
+				</div>
+			</div>
+	
+
+			<div class="item col-md-12" style="margin-top: 50px; margin-bottom: 50px;">
+				<div class="col-md-3 book_img">
+					<img src="img/os.jpg" width=100px height= auto/>
+				</div>
+				<div class="col-md-9 book_desc">
+					<div class="book_title">
+						<h4 class="item_name">Operating Systems Part - 4</h4>
+					</div>
+					<div class="price">
+						Price: &#8377;<span id="price3">570</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+
+</div>
+
+<script src="js/books.js"> </script>
+
+ </BODY>
+</HTML>

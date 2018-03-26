@@ -1,0 +1,106 @@
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/*basic reset*/
+* {margin: 0; padding: 0;}
+
+
+body {
+	background: 
+		linear-gradient(rgba(196, 102, 0, 0.6), rgba(155, 89, 182, 0.6));
+	font-family: montserrat, arial, verdana;
+}
+
+html {
+	height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #form {
+		width:100%;
+    }
+}
+@media only screen and (min-width: 768px) {
+	/* For Desktop*/
+	#form {
+		width: 400px;
+    }
+}
+
+.cname {
+	text-align:center;
+	font-family: montserrat, arial, verdana;
+	color: #ad3737;
+}
+
+.cname h1 {
+	font-weight: bolder;
+}
+
+#form {
+	margin: 7% auto;
+	text-align: center;
+	position: relative;
+}
+#form fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+	
+}
+/*Hide all except first fieldset*/
+#fs_2 {
+	display: none;
+}
+/*inputs*/
+#form input, #form textarea, #form select, #form fieldset .gender{
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+}
+/*buttons*/
+#form .action-button {
+	width: 100%;
+	background: #27AE60;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 0px;
+	margin: 10px auto;
+}
+#form .action-button:hover, #form .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+/*headings*/
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+}
+
+/* Login prompt*/
+.login_pro {
+	text-align:center;
+	font-family: montserrat, arial, verdana;
+}

@@ -1,0 +1,35 @@
+.btn_group .button {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 30px;
+    border: none;
+    border-radius: 3px;
+	padding: 6px 12px;
+    width: 100%;
+    text-align: center;
+	text-decoration: none;
+}
+
+.btn_group a.signup_btn{
+    background-color: #69a74e;
+	color:GhostWhite;
+	border: 1px solid #69a74e;
+}
+
+.btn_group a.signup_btn:hover {
+	background-color: GhostWhite;
+	color:#69a74e;
+	border: 1px solid #69a74e;
+}
+
+.btn_group button.login_btn {
+    color: GhostWhite;
+	background-color: #0066ff;
+	border: 1px solid #0066ff;
+}
+
+.btn_group button.login_btn:hover {
+	background-color: GhostWhite;
+	color:#0066ff;
+	border: 1px solid #0066ff;
+}

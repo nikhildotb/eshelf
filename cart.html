@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Cart | E-shelf</title>
+	<link href="css/homepage.css" rel="stylesheet" type="text/css">
+	<link href="css/cart.css" rel="stylesheet" type="text/css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+</head>
+<body onload="bill();">
+ <div class="heading font">
+	<h1 class="txt">E-Shelf</h1>
+ </div>
+ <div class="bar font" id="navbar">
+	<ul>
+	  <li><a href="homepage.html">Home</a></li>
+	  <li><a href="#">Books</a></li>
+	  <li><a href="#">Contact</a></li>
+	  <li class="right"><a href="loginpage.html"><span class="fa fa-user-circle-o"> </span>&ensp;Login/Signup</a></li>
+	  <li class="right cart active"><a href="#"><span class="fa fa-shopping-cart"> </span>&ensp;Cart</a></li>
+	</ul>
+ </div>
+
+<div class="col-md-12 content">
+	<div class="page_title" >
+		<h1 class="font"><b>Your Cart</b></h1>
+<!--		<hr style="border-top: 1px solid #337ab7; position: relative; right:35%; width: 30%;"> -->
+	</div>
+<div class="cart_content col-md-12">
+	<div class="items col-md-9">
+		<div class="item col-md-9">
+			<div class="col-md-3 book_img">
+				<img src="img/cp.jpg" width=100px height= auto/>
+			</div>
+			<div class="col-md-9 book_desc">
+				<div class="book_title">
+					<h4 class="item_name">C Programming By Balaguru Swamy</h4>
+				</div>
+				<div class="qty">
+					<p>Quantity : <input type="number" id="quantity1" name="quantity" min="0" value="1" onchange="document.getElementById('price1').innerHTML = document.getElementById('quantity1').value * 450; bill();"/> </p>
+				</div>
+				<div class="price">
+					Price: &#8377;<span id="price1">450</span>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="item col-md-9" style="margin-top: 50px;">
+			<div class="col-md-3 book_img">
+				<img src="img/java.jpg" width=100px height= auto/>
+			</div>
+			<div class="col-md-9 book_desc">
+				<div class="book_title">
+					<h4 class="item_name">Java - The complete Reference</h4>
+				</div>
+				<div class="qty">
+					<p>Quantity : <input type="number" id="quantity2" name="quantity" min="0" value="1" onchange="document.getElementById('price2').innerHTML = document.getElementById('quantity2').value * 640; bill();"/> </p> 
+				</div>
+				<div class="price">
+					Price: &#8377;<span id="price2">640</span>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="item col-md-9" style="margin-top: 50px; margin-bottom: 50px;">
+			<div class="col-md-3 book_img">
+				<img src="img/os.jpg" width=100px height= auto/>
+			</div>
+			<div class="col-md-9 book_desc">
+				<div class="book_title">
+					<h4 class="item_name">Operating Systems</h4>
+				</div>
+				<div class="qty">
+					<p>Quantity : <input type="number" id="quantity3" name="quantity" min="0" value="1" onchange="document.getElementById('price3').innerHTML = document.getElementById('quantity3').value * 570; bill();"/> </p> 
+				</div>
+				<div class="price">
+					Price: &#8377;<span id="price3">570</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bill col-md-3">
+		<p><h3 class="text">Order Total: <span id="total_price"> </span> </h3> </p>
+		<p class="button"><a href="payment.html" onclick=""><b>Place Order</b></a></p>
+	</div>
+</div>
+</div>
+<script src="js/store.js"> </script>
+
+</body>
+</html>

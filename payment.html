@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Homepage | E-shelf</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+	<link href="css/homepage.css" rel="stylesheet" type="text/css">
+	<link href="css/payment.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	 <div class="heading">
+		<h1 class="txt">E-Shelf</h1>
+	</div>
+<div class="col-md-12">
+	<div class="col-md-3"> </div>
+	<div class="col-md-5 payment">
+		<h4>Order Total: 1660</h4>
+		<input class="options" type="radio" id="btn1" name="yesorno" onClick="pay_func()">Credit card<br>
+			<form id="credit">
+				<label class="cred">Card number: </label>
+				<input type="text" style="width:200px; margin-bottom:10px"><br>
+				<label class="cred">Name: </label>
+				<input type="text" style="width:200px; margin-bottom:10px"> <br>
+				<label class="cred">CVV: </label>
+				<input type="number" style="width:50px; margin-bottom:10px"><br>
+				<label class="cred">Expiry date: </label>
+				<input class="mm" type="number" onKeyUp="exp(0)" style="width:40px; margin-bottom:10px" placeholder="mm">
+				<span> <strong>/</strong> </span>
+				<input class="yy" type="number" style="width:40px; margin-bottom:10px" placeholder="yy">
+			</form>
+		<input class="options" type="radio" id="btn2" name="yesorno" onClick="pay_func()">Debit card<br>
+			<form id="debit">
+				<label class="debt">Card number: </label>
+				<input type="text" style="width:200px; margin-bottom:10px"><br>
+				<label class="debt">Name: </label>
+				<input type="text" style="width:200px; margin-bottom:10px"> <br>
+				<label class="debt">CVV: </label>
+				<input type="number" style="width:50px; margin-bottom:10px"><br>
+				<label class="debt">Expiry date: </label>
+				<input class="mm" type="number" onKeyUp="exp(1)" style="width:40px; margin-bottom:10px" placeholder="mm">
+				<span> <strong>/</strong> </span>
+				<input class="yy" type="number" style="width:40px; margin-bottom:10px" placeholder="yy">
+			</form>
+		<input class="options" id="cod" type="radio" style="margin-bottom:20px;" onClick="pay_func()" >Cash on delivery<br>
+
+		<span class="button"><a class="pay_btn" id="pay_btn" href="" ><b>Pay Now</b></a></span>
+		<span class="button"><a class="cancel_btn" id="cancel_btn" href="cart.html" ><b>Cancel</b></a></span>
+	</div>
+</div>
+</body>
+<script src="js/payment.js"> </script>
+
+</html>

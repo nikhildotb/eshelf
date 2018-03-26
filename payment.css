@@ -1,0 +1,72 @@
+/*.payment{
+	padding: 20px 15px 0 15px;
+	line-height: 1.428571;
+	background-color: #fff;
+	margin : 150px 20px 20px 20px;
+	border-radius : 3px;
+}*/
+
+.payment {
+	position: relative;
+	margin: 7% auto;
+	background: white;
+	box-sizing: border-box;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	font-family: montserrat;
+}
+/*
+#credit,#debit{
+	display:none;
+	margin-left:100px;
+}*/
+
+#credit,#debit {
+	display:none;
+	width: 80%;
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+}
+
+.cred,.debt{
+	display:block;
+	float:left;
+	width:100px;
+}
+
+#pay_btn {
+	background-color: #69a74e;
+	color:GhostWhite;
+	border: 1px solid #69a74e;
+	margin: 15px;
+	border-radius: 3px;
+}
+
+.button {
+	margin-top: 15px;
+}
+
+.button a{
+	border: 1px solid #0066ff;
+	border-radius:3px;
+	background-color: #0066ff;
+	margin: 15px;
+	color: GhostWhite;
+	padding:5px;
+	cursor: pointer;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    margin: 0; 
+}

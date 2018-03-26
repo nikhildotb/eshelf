@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body {
+	background: 
+		linear-gradient(#f5eded, rgba(155, 89, 182, 0.6));
+	font-family: montserrat, arial, verdana !important;
+}
+html {
+	height:100%;
+}
+.cname {
+	text-align:center;
+	color: #ad3737;
+}
+
+.cname h1 {
+	font-weight: bolder;
+}
+
+
+@media only screen and (min-width: 768px) {
+	/* For Desktop*/
+	.login_block {
+		width: 400px;
+    }
+}
+
+.login_block {
+	padding: 20px 15px 0 15px;
+	line-height: 1.428571;
+	margin-top: 5%;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+.form-control {
+	background-color: #fff7f7;
+}
+
+.login_block .login_form label {
+    font-size: 15px;
+	display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+
+.login_block .login_form input {
+    padding: 13px 11px;
+    height: 42px;
+}
+
+.login_block .login_form .btn_group .button {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 30px;
+    border: none;
+    border-radius: 3px;
+	padding: 6px 12px;
+    width: 100%;
+    text-align: center;
+	text-decoration: none;
+}
+
+.login_block .login_form .btn_group a.signup_btn{
+    background-color: #69a74e;
+	color:GhostWhite;
+	border: 1px solid #69a74e;
+}
+
+.login_block .login_form .btn_group a.signup_btn:hover {
+	background-color: GhostWhite;
+	color:#69a74e;
+	border: 1px solid #69a74e;
+}
+
+.login_block .login_form .btn_group button.login_btn {
+    color: GhostWhite;
+	background-color: #0066ff;
+	border: 1px solid #0066ff;
+}
+
+.login_block .login_form .btn_group button.login_btn:hover {
+	background-color: GhostWhite;
+	color:#0066ff;
+	border: 1px solid #0066ff;
+}
+
+.login_block .login_form .reset_password {
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 14px;
+}
